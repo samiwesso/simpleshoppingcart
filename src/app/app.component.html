@@ -1,0 +1,5 @@
+<router-outlet>
+<product-list (productAdded)="addProductToCart($event)" [products]="productList"></product-list>
+<shopping-cart [products]="cartProductList" (productRemoved)="removeProduct($event)"></shopping-cart>
+
+</router-outlet>
