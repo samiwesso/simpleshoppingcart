@@ -10,6 +10,7 @@ export class ShoppingCartComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
   @Input() products: any[];
   @Output() productRemoved = new EventEmitter();

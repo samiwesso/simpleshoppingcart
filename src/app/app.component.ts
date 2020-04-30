@@ -18,6 +18,7 @@ export class AppComponent {
     const productExistInCart = this.cartProductList.find(({name}) => name === product.name); // find product by name
     if (!productExistInCart) {
       this.cartProductList.push({...product, num:1}); // enhance "porduct" opject with "num" property
+    
       return;
     }
     productExistInCart.num += 1;

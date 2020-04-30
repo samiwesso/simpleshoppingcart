@@ -1,4 +1,7 @@
 <div *ngIf="product">
     <div>{{product.name}}</div>
+    <div>{{product.price}}</div>
+    <div> {{product.num * product.price}}</div>
+    <!-- <div>Total {{ total }}</div> -->
     <input type="number" [(ngModel)]="product.num" min="0" (ngModelChange)="modelChanged($event)"/>
   </div>
