@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shoppingtest';
+  
   productList = [
     {name: 'Z900', price: 8799},
     {name: 'shubert helmet', price: 999},
